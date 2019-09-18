@@ -6,17 +6,12 @@
 
 //now do it with jQuery
 
-$('#doSomething').click(disappear);
-function disappear (){
-	$('#circle').hide();
 
-}
 
-$('#doSomething').click(appear);
-function appear (){
-	$('#circle').show();
-}
-
+$('#doSomething').click(function() {
+  $('#circle').toggle();  
+  //click once to fade in and again to fade out
+});
 
 $('#circle').hover(fade);
 function fade(){
