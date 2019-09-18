@@ -10,12 +10,15 @@
 
 $('#doSomething').click(function() {
   $('#circle').toggle();  
-  //click once to fade in and again to fade out
+  $('#circle').css('backgroundColor', 'blue')
+  
+  //click once to hide and again to show
 });
 
 $('#circle').hover(fade);
 function fade(){
-	$('#circle').fadeOut().fadeIn();
+	$('#circle').fadeOut(3000).fadeIn(3000);
+	$('#circle').css('backgroundColor', 'red')
 
 }
 
